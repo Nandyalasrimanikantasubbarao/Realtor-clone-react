@@ -1,7 +1,7 @@
-import HookuseEffect from "./HookuseEffect";
+import Todousingjson from "./todousingjson";
 
 const App = () => {
-  return <HookuseEffect />;
+  return <Todousingjson />;
 };
 
 export default App;
