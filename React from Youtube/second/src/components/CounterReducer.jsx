@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useRef } from "react";
 
 const initialState = {
   count: 0,
@@ -18,6 +18,8 @@ function reducer(state, action) {
 
 function Counter() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const ref = useRef();
+  console.log(ref);
 
   return (
     <div>
@@ -25,6 +27,8 @@ function Counter() {
       <input
         type="number"
         value={state.value}
+        placeholder="hi"
+        ref={ref}
         onChange={(e) =>
           dispatch({ type: "updateValue", payload: e.target.value })
         }
