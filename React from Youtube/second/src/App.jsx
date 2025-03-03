@@ -1,18 +1,19 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 // import Component from "./ComponentsA";
 // import ReducerLearning from "./ReducerLearning";
 // import Counter from "./CounterReducer";
-import Todo from "./components/Todo";
 
-export const Data = createContext();
+import Meals from "./components/Meals";
+
 function App() {
   const name = "Manikanta";
   return (
-    <Data.Provider value={name}>
+    <div>
       {/* <Counter /> */}
 
-      <Todo />
-    </Data.Provider>
+      {/* <Todo /> */}
+      <Meals />
+    </div>
   );
 }
 
